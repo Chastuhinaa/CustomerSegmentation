@@ -1,0 +1,91 @@
+{
+  "rows": 8950,
+  "columns": 18,
+  "duplicates": 0,
+  "missing": {
+    "CREDIT_LIMIT": 1,
+    "MINIMUM_PAYMENTS": 313
+  },
+  "missing_minpay_with_zero_payments": 240,
+  "outliers_iqr": {
+    "BALANCE": 695,
+    "BALANCE_FREQUENCY": 1493,
+    "PURCHASES": 808,
+    "ONEOFF_PURCHASES": 1013,
+    "INSTALLMENTS_PURCHASES": 867,
+    "CASH_ADVANCE": 1030,
+    "PURCHASES_FREQUENCY": 0,
+    "ONEOFF_PURCHASES_FREQUENCY": 782,
+    "PURCHASES_INSTALLMENTS_FREQUENCY": 0,
+    "CASH_ADVANCE_FREQUENCY": 525,
+    "CASH_ADVANCE_TRX": 804,
+    "PURCHASES_TRX": 766,
+    "CREDIT_LIMIT": 248,
+    "PAYMENTS": 808,
+    "MINIMUM_PAYMENTS": 901,
+    "PRC_FULL_PAYMENT": 1474,
+    "TENURE": 1366
+  },
+  "rows_with_any_outlier": 5963,
+  "features_used": [
+    "BALANCE",
+    "BALANCE_FREQUENCY",
+    "ONEOFF_PURCHASES",
+    "INSTALLMENTS_PURCHASES",
+    "CASH_ADVANCE",
+    "PURCHASES_FREQUENCY",
+    "ONEOFF_PURCHASES_FREQUENCY",
+    "PURCHASES_INSTALLMENTS_FREQUENCY",
+    "CASH_ADVANCE_FREQUENCY",
+    "CREDIT_LIMIT",
+    "PAYMENTS",
+    "MINIMUM_PAYMENTS",
+    "PRC_FULL_PAYMENT"
+  ],
+  "k": 4,
+  "cluster_sizes": [
+    2078,
+    1272,
+    2323,
+    3277
+  ],
+  "silhouette": 0.24216685248033396,
+  "davies_bouldin": 1.5184808166683847,
+  "calinski_harabasz": 2322.1489835459192,
+  "ari_mean": 0.9973533303826443,
+  "ari_min": 0.9946724300992067,
+  "raw_baseline_silhouette": 0.19772427985845714,
+  "raw_baseline_sizes": [
+    3980,
+    409,
+    1195,
+    3366
+  ],
+  "pca_explained": [
+    0.2892149657781404,
+    0.2580484792966699
+  ],
+  "zero_payment_check": {
+    "zero_payment_clients": 240,
+    "k6_smallest_cluster_size": 247,
+    "k6_smallest_cluster_zero_payment": 240,
+    "zero_payment_by_cluster": [
+      8,
+      220,
+      5,
+      7
+    ],
+    "silhouette_without_zero_payment": {
+      "2": 0.234929251585019,
+      "3": 0.24249447310387023,
+      "4": 0.24662632489512074,
+      "5": 0.24027292705574418,
+      "6": 0.2280465630624534,
+      "7": 0.2205631799478949,
+      "8": 0.19510894560251685,
+      "9": 0.199953450635023,
+      "10": 0.1997426584346047
+    },
+    "ari_with_vs_without": 0.9528915287101005
+  }
+}
